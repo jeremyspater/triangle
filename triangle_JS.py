@@ -23,7 +23,7 @@ def tri_clas(sides: List[float]):
         return('Equilateral')
     
     elif math.isclose(sides[0], sides[1]) or math.isclose(sides[1], sides[2]) or math.isclose(sides[0], sides[2]): 
-        return('Isoceles')
+        return('Isosceles')
     
     else:
         return('Scalene')
