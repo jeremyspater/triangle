@@ -1,5 +1,5 @@
 # triangle
-Coding test: classify triangle based on side lengths
+## Coding test: classify triangle based on side lengths
 
 The code requires python3 to be installed, with packages 'typing' and 'math'.
 
