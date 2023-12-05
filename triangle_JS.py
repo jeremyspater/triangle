@@ -29,21 +29,21 @@ def tri_clas(sides: List[float]):
 #Testing cases:
 
 #Basic cases:
-#print(tri_clas([1,1,1]))
-#print(tri_clas([1,1,2]))
-#print(tri_clas([1,2,3]))
+print(tri_clas([1,1,1]))
+#print(tri_clas([2,2,3]))
+#print(tri_clas([3,2,2]))
+#print(tri_clas([2,3,2]))
+#print(tri_clas([2,3,4]))
 
 #Illegitimate cases:
-print(tri_clas(['a','b','c'])) #
+#print(tri_clas(['a','b','c'])) 
 #print(tri_clas([1,2,3,4]))
 #print(tri_clas([1, 1, -1]))
 #print(tri_clas([1, 2, 1]))
 #print(tri_clas([3, 1, 1]))
-#print(tri_clas([1, 3, 1]))
-#print(tri_clas([1, 1, 3]))
 
 #Interesting cases:
 #print(tri_clas([1.5, 3/2, 1.5]))
-#print(tri_clas([0.3, 0.1+0.2, 0.3]))
-#print(tri_clas([0.3, 0.1+0.2, 1]))
+#print(tri_clas([0.3, 0.1+0.2, 0.3])) #'isclose' resolves floating-point rounding error here
 #print(tri_clas([1E99, 1E99, 1E99]))
+#print(tri_clas([1E99, 1E99, 3E99])) #this throws an error, as it should
